@@ -1,0 +1,51 @@
+.hajj-image{
+    vertical-align: middle;
+    width: 200px;
+}
+@media (max-width: 479px) {
+    .hajj-image{
+        vertical-align: middle;
+        width: 100%;
+    }
+}
+
+#hajj .criteria-list {
+    border-bottom: 1px solid rgba(128, 137, 150, 0.2);
+}
+#hajj .criteria-head {
+    font-size: .9rem;
+    font-family: 'Inter';
+}
+#hajj .criteria-body {
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: 'Inter';
+}
+.hajj-container{
+    font-family: 'AdorshoLipi';
+}
+
+
+/*==== bread-bg-hajj ======*/
+.bread-bg-hajj {
+    background-image: url("../images/hajj/hajj.jpg"); }
+
+
+.nav-tabs .custom-link.active {
+    text-align: center;
+    border-color: white;
+}
+
+.page-link{
+    color:#2aaa8a;
+}
+.page-item.active .page-link{
+    background-color: #2aaa8a;
+    border-color: #2aaa8a;
+}
+
+@media (min-width: 479px) {
+    #hajj_image{
+        height: 50vh;
+    }
+}
