@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\RefundAcceptMail;
 use App\Mail\RefundMail;
 use App\Models\Refund;
 use App\Models\Country;
@@ -45,7 +46,7 @@ class RefundController extends Controller
 
         $prevrequest = DB::table('refunds')->where('pnr',$request->pnr)->where('p_ticket_1',$request->p_ticket_1)->get();
         if (!empty($prevrequest[0])) {
-            
+
             $request->session()->flash('success', 'You already requested for this PNR.');
             return redirect(route('refund-form'));
 
@@ -121,16 +122,16 @@ class RefundController extends Controller
             $result = $refund->save();
 
             if($result){
-                Mail::to($refund->email)->send(new RefundMail($refund));
-        
+                Mail::to($refund->email)->send(new RefundAcceptMail($refund));
+
                 if (Mail::failures()) {
                     $request->session()->flash('success', 'Your request has been submitted successfully. Submission ID: RFID#'.$refund->id.'. You can check your refund request status using given PNR and last 4 digits account number from Refund Status section. For technial error we cannot send you an email now.');
                 }else{
                     $request->session()->flash('success', 'Your request has been submitted successfully. Submission ID: RFID#'.$refund->id.'. Confirmation mail has been sent to your given email: '.$refund->email.'. You can check your refund request status using given PNR and last 4 digits account number from Refund Status section.');
                 }
                 //$request->session()->flash('success', 'Your request has been submitted successfully. Submission ID: RFID#'.$refund->id.'. '.$refund->email.'. We have received your submission and we will review it for further action. You can check your refund request status using your PNR and Last 4 digits account number from REFUND STATUS SECTION.');
-                
-                
+
+
             }else{
                 $request->session()->flash('error', 'Something went wrong! Please try to submit again. If this issue remains again contact ibebiman@biman.gov.bd');
             }
@@ -146,10 +147,10 @@ class RefundController extends Controller
             'g-recaptcha-response' => 'recaptcha',
         ]);
 
-        
+
         $resolvedrequest = DB::table('refunds')->where('pnr',$request->pnr)->get();
-        
-        
+
+
 
         if ($resolvedrequest[0]->status == 0) {
             $request->session()->flash('success', 'Dear '.$resolvedrequest[0]->full_name.', Your refund request for PNR-'.$resolvedrequest[0]->pnr.' is still under processing. We will review your request as soon as possible. Thank You for your time and patience.');

@@ -318,7 +318,6 @@
                 </div><!-- end col-lg-8 -->
 
             </div><!-- end row -->
-
         </div><!-- end container -->
     </section><!-- end contact-area -->
     <!-- ================================

@@ -290,9 +290,12 @@ Route::get('/flightinfo', function () {
 // })->name('groundHandling');
 
 // ******* hajj page ************ //
-// Route::get('/hajj', function () {
-//     return view('hajj');
-// })->name('hajj');
+Route::get('/hajj', function () {
+    return view('hajj');
+})->name('hajj');
+
+Route::get('/hajj-info', 'App\Http\Controllers\HajjController@index')->name('hajj-info');
+Route::get('/search-hajj-sch', 'App\Http\Controllers\HajjController@hajjSchSearch')->name('search.hajj-sch');
 
 Route::get('/hazmat', function () {
     return view('hazmat');
@@ -314,10 +317,17 @@ Route::get('/info', function () {
 //     return view('internationalschedule');
 // })->name('internationalschedule');
 
-Route::get('/special-assistance', function () {
-    // return "Special Assistance";
-    return view('special-assistance');
-})->name('special-assistance');
+Route::get('/accessibility-plan', function () {
+    return view('accessibility-plan');
+})->name('accessibility-plan');
+
+Route::get('/accessibility', function () {
+    return view('accessibility');
+})->name('accessibility');
+
+Route::get('/accessibility-progress', function () {
+    return view('accessibility-progress');
+})->name('accessibility-progress');
 
 
 Route::get('/manualrefund', function () {

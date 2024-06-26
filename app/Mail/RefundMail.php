@@ -30,7 +30,7 @@ class RefundMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Refund request submitted to Biman Bangladesh Airlines')->markdown('emails.refundMail',[
+        return $this->subject('Refund request submitted to Biman Bangladesh Airlines')->markdown('emails.refundAccept',[
             'details'=> $this->details
         ]);
     }

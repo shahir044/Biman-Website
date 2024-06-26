@@ -4,12 +4,18 @@
     {!! htmlScriptTagJsApi() !!}
     {{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet"> --}}
     <link href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet">
+    <style>
+        h1, h2, h3, h4, h5, h6, p, span, li{
+            font-family: 'SolaimanLipi','Inter';
+        }
+    </style>
 @endsection
 
 @section('content')
     <!-- ================================
-                            START BREADCRUMB AREA
-                        ================================= -->
+        START BREADCRUMB AREA
+    ================================= -->
     <section class="breadcrumb-area bread-bg-hajj">
         <div class="breadcrumb-wrap">
             <div class="container hajj-container">

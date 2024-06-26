@@ -16,7 +16,7 @@
             color: #666666;
         }
         .hero-background{
-            background-image: url("/assets/images/hero/hero-bg2.jpg") !important;
+            background-image: url("/assets/images/hero/hero-bg2.jpg");
         }
     </style>
 @endsection
@@ -1252,21 +1252,21 @@
             </div><!-- end row -->
         </div><!-- end container -->
         <div class="full-width-slider padding-top-50px carousel-action">
-            <div class="full-width-slide-item">
-                <a class="d-block" data-fancybox="gallery" href="{{ asset('assets/images/offers/RISINGSUN2.png') }}" data-caption="Discounts & Offers">
-                    <img src="{{ asset('assets/images/offers/RISINGSUN2.png') }}" alt="RISINGSUN">
-                </a>
-            </div>
+            <!--<div class="full-width-slide-item">-->
+            <!--    <a class="d-block" data-fancybox="gallery" href="{{ asset('assets/images/offers/RISINGSUN2.png') }}" data-caption="Discounts & Offers">-->
+            <!--        <img src="{{ asset('assets/images/offers/RISINGSUN2.png') }}" alt="RISINGSUN">-->
+            <!--    </a>-->
+            <!--</div>-->
             <div class="full-width-slide-item">
                 <a class="d-block" data-fancybox="gallery" href="{{ asset('assets/images/offers/SMILEBIMAN.png') }}" data-caption="Discounts & Offers">
                     <img src="{{ asset('assets/images/offers/SMILEBIMAN.png') }}" alt="SMILEBIMAN">
                 </a>
             </div>
-            <div class="full-width-slide-item">
-                <a class="d-block" data-fancybox="gallery" href="{{ asset('assets/images/offers/COXCAR23_web.png') }}" data-caption="Discounts & Offers">
-                    <img src="{{ asset('assets/images/offers/COXCAR23_web.png') }}" alt="COXCAR23">
-                </a>
-            </div>
+            <!--<div class="full-width-slide-item">-->
+            <!--    <a class="d-block" data-fancybox="gallery" href="{{ asset('assets/images/offers/COXCAR23_web.png') }}" data-caption="Discounts & Offers">-->
+            <!--        <img src="{{ asset('assets/images/offers/COXCAR23_web.png') }}" alt="COXCAR23">-->
+            <!--    </a>-->
+            <!--</div>-->
         </div><!-- end full-width-slider -->
     </section><!-- end gallery-area -->
     <!-- ================================
@@ -1276,11 +1276,11 @@
 
     
 
-        <div class="job-area section--padding">
+    <div class="job-area section--padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="discount-box">
+                    <div>
                         <div class="discount-img">
                             <img src="{{asset('assets/images/misc/discount.png')}}" alt="discount img">
                         </div><!-- end discount-img -->
@@ -1301,43 +1301,6 @@
     <div class="section-block"></div>
 
 
-   
-
-    <!-- ================================
-START DISCOUNT AREA
-================================= -->
-    <!--<section class="discount-area">-->
-    <!--    <div class="container">-->
-    <!--        <div class="row">-->
-    <!--            <div class="col-lg-12">-->
-    <!--                <div class="discount-box">-->
-    <!--                    <div class="discount-img">-->
-    <!--                        <img src="{{asset('assets/images/offers/hero-bg4.jpg')}}" alt="discount img">-->
-    <!--                    </div><!-- end discount-img -->
-    <!--                    <div class="discount-content">-->
-    <!--                        <div class="section-heading">-->
-                                <!--<h2 class="sec__title mb-0 line-height-50 text-white" style="color:yellow !important">Celebrate</h2>-->
-                                <!--<p class="sec__desc text-white">this Eid with your loved ones</p>-->
-    <!--                            <p class="sec__desc text-white">Limited Time Offer</p>-->
-    <!--                            <h2 class="sec__title mb-0 line-height-50 text-white" style="color:yellow !important">Enjoy 10% discount</h2>-->
-    <!--                            <p class="sec__desc text-white">on Web booking in all sectors</p>-->
-    <!--                        </div><!-- end section-heading -->
-    <!--                        <div class="btn-box pt-4">-->
-    <!--                            <a href="#" class="theme-btn border-0">PromoCode: <b>BGWEB2022</b><i class="la la-arrow-right ml-1"></i></a>-->
-    <!--                        </div>-->
-    <!--                    </div><!-- end discount-content -->
-    <!--                    <div class="company-logo">-->
-
-    <!--                        <p class="text-white font-size-14 text-right">*T&C applied</p>-->
-    <!--                    </div><!-- end company-logo -->
-    <!--                </div>-->
-    <!--            </div><!-- end col-lg-12 -->
-    <!--        </div><!-- end row -->
-    <!--    </div><!-- end container -->
-    <!--</section><!-- end discount-area -->
-    <!-- ================================
-        END DISCOUNT AREA
-    ================================= -->
 
     <!-- ================================
             START DESTINATION (GALLERY) AREA
@@ -1349,8 +1312,8 @@ START DISCOUNT AREA
                     <div class="section-heading">
                         <span> - Featured Destination</span>
                         <h2 class="sec__title cd-headline rotate-1 display-3 fw-bold">
-                            Dhaka to
-                            <span class="cd-words-wrapper text-color-6 font-weight-bolder">
+                            DHAKA TO 
+                            <span class="cd-words-wrapper text-color-10 font-weight-bolder">
                               <b class="is-visible">ABU DHABI</b>
                               <b>BANGKOK</b>
                               <b>CHINA</b>
@@ -1396,7 +1359,19 @@ START DISCOUNT AREA
             END DESTINATION (GALLERY) AREA
         ================================= -->
         
-        
+    <div class="job-area section--padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card-item destination-card">
+                        <div class="card-img">
+                            <img src="{{asset('assets/images/misc/mobileapp.png')}}" alt="mobile app">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- ================================
     START CTA AREA
@@ -1437,7 +1412,7 @@ START DISCOUNT AREA
                     <span aria-hidden="true" style="font-size: 2rem; color: black;">&times;</span>
                   </button>
                   <a href="">
-                      <img  style="display:block; width: 100%; height:100%" src="{{ asset('assets/images/offers/RISINGSUN2.png') }}">
+                      <img  style="display:block; width: 100%; height:100%" src="{{ asset('assets/images/offers/SMILEBIMAN.png') }}">
                   </a> 
                  
              </div>

@@ -36,7 +36,7 @@
     <meta property="og:url" content="https://www.biman-airlines.com/" />
     <meta property="og:title" content=" Your Home In The Sky" />
     <meta property="og:description" content="The National Flag Carrier of Bangladesh." />
-    
+
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('assets/images/logo/bimanLogo-Copy.svg') }}">
 
@@ -61,7 +61,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/custom_v12.css') }}">
 
     @yield('header-extension')
-    
+
 </head>
 
 <body>
@@ -98,7 +98,7 @@
                     <div class="col-lg-5">
                         <div class="header-top-content">
                             <div class="header-right d-flex align-items-center justify-content-end">
-                                
+
                                 <div class="header-right-action">
                                     <ul class="list-items">
                                         <li style="padding-right: 4px;margin-bottom:0px;"><a href="tel:+8801990997997"><i class="fa fa-phone mr-1"></i>+8801990997997</a></li>
@@ -109,7 +109,7 @@
                                     <div class="select-contain select--contain w-auto" style="align-items: center;justify-content: center;
                                     text-align: center;display: flex;">
                                         <span id="flag" class="flag-icon flag-icon-bd mr-1" style="height: 14px;"></span>
-                                    
+
                                     </div>
 
                                 </div>
@@ -179,7 +179,7 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                       
+
                                         <li>
                                             <a href="#">Travel Info <i class="la la-angle-down"></i></a>
                                             <div class="dropdown-menu-item mega-menu">
@@ -192,8 +192,8 @@
                                                         <li><a href="{{ route('refund-request', ['#refund_status']) }}">Check Refund Status</a></li>
                                                         <li><a href="{{ route('privacyPolicy') }}">Privacy Policy</a>
                                                         </li>
-                                                        <li><a href="{{ route('special-assistance') }}">Disability Assistance</a></li>
-                                                        
+                                                        <li><a href="{{ route('accessibility-plan') }}">Disability Assistance</a></li>
+
                                                 </ul>
                                         </li>
                                         <li class="col-lg-6 mega-menu-item">
@@ -207,20 +207,26 @@
                                                             <li><a href="{{ route('termsConditions') }}">Terms
                                                         and Conditions</a></li>
                                                         <li><a href="https://www.biman-airlines.com/termsConditions#Biman-International-Tariff-Manual">Tariff Manual</a></li>
-                                            
-                                                
+
+
                                                 </ul>
                                         </li>
                                     </ul>
                             </div>
                             </li>
-                            
+
                             <li>
                                 <a href="#">Contact <i class="la la-angle-down"></i></a>
                                 <ul class="dropdown-menu-item beta-menu">
                                     <li><a href="{{ route('contact', ['#domestic']) }}">Domestic Office</a></li>
                                     <li><a href="{{ route('contact', ['#global-office']) }}">International Office</a></li>
                                     <li><a href="{{ route('contact', ['#customer-feedback']) }}">Feedback</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Hajj 2024 <i class="la la-angle-down"></i></a>
+                                <ul class="dropdown-menu-item beta-menu">
+                                    <li><a href="{{ route('hajj-info') }}">Hajj Schedule</a></li>
                                 </ul>
                             </li>
                              <li>
@@ -237,12 +243,12 @@
                                                     </li>
                                                     <li class="col-lg-6 mega-menu-item">
                                                         <ul>
-                                                           
+
                                                             <li><a href="{{ route('loyalty.faq') }}">Loyalty FAQ's</a></li>
                                                             @auth
                                                             <li><a href="{{ route('loyalty.member.test') }}">My Account</a></li>
                                                             @endauth
-                                                            
+
                                                             <!--<li><a href="{{ route('login') }}">Login</a></li>-->
                                                         </ul>
                                                     </li>
@@ -252,7 +258,7 @@
                                 </ul>
                             </nav>
                         </div><!-- end main-menu-content -->
-                    
+
                     </div><!-- end menu-wrapper -->
                 </div><!-- end col-lg-12 -->
             </div><!-- end row -->
@@ -270,7 +276,7 @@
     <!-- Your Chat plugin code -->
     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
-    
+
     @yield('content')
 
     <!-- ================================
@@ -427,7 +433,7 @@
     {{-- carousal --}}
     <script src="{{ asset('assets/js/main_v1.js') }}"></script>
     <script src="{{ asset('assets/js/jquery.scrollbox.js') }}"></script>
-    
+
     <script>
         $(window).on('load',function(){
                         if (window.location.href.match("source=mobile-app$") || (window.location.href.match("source=mobile-app"))) {
@@ -444,18 +450,18 @@
                     newUrl = url.replace(newParam, "");
                     newUrl += newParam;
                     window.location.href = newUrl;
-    
+
                     if (window.location.href.match("source=mobile-app$") || (window.location.href.match("source=mobile-app"))) {
                         $('.header-menu-wrapper').css("display", "none");
                         $('.footer-area').css("display", "none");
                         // $('.breadcrumb-area').css("display", "none");
                     }
                 }
-    
+
             }
         });
 
-       
+
     </script>
 
     <script>
@@ -564,32 +570,6 @@
         xhttp.send();
     </script>
 
-    <!-- Messenger Chat Plugin S-->
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "100239145107795");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v17.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!-- Messenger Chat Plugin E-->
-    
     @yield('page-specific-footer')
 
 </body>
