@@ -1430,7 +1430,7 @@
     <!-- ================================
             START DESTINATION (GALLERY) AREA
         ================================= -->
-        <section class="deal section--padding">
+    <section class="deal section--padding">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
