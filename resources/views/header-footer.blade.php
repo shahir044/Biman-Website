@@ -36,7 +36,7 @@
     <meta property="og:url" content="https://www.biman-airlines.com/" />
     <meta property="og:title" content=" Your Home In The Sky" />
     <meta property="og:description" content="The National Flag Carrier of Bangladesh." />
-    
+
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('assets/images/logo/bimanLogo-Copy.svg') }}">
 
@@ -58,15 +58,11 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" referrerpolicy="no-referrer" />
 
-<<<<<<< HEAD
     <!--<link rel="stylesheet" href="{{ asset('assets/css/custom_v13.css') }}">-->
     <link rel="stylesheet" href="{{ asset('assets/css/custom-20240815.css') }}">
-=======
-    <link rel="stylesheet" href="{{ asset('assets/css/custom-20240815.css') }}">
 
->>>>>>> d8196c1b01a514478db478fc06c4e2e5ca019e9d
     @yield('header-extension')
-    
+
 </head>
 
 <body>
@@ -103,7 +99,7 @@
                     <div class="col-lg-5">
                         <div class="header-top-content">
                             <div class="header-right d-flex align-items-center justify-content-end">
-                                
+
                                 <div class="header-right-action">
                                     <ul class="list-items">
                                         <li style="padding-right: 14px;margin-bottom:0px;"><a href="{{ route('accessibility') }}"><i class="fa fa-wheelchair-alt mr-1" aria-hidden="true"></i> Accessibility</a></li>
@@ -115,7 +111,7 @@
                                     <div class="select-contain select--contain w-auto" style="align-items: center;justify-content: center;
                                     text-align: center;display: flex;">
                                         <span id="flag" class="flag-icon flag-icon-bd mr-1" style="height: 14px;"></span>
-                                    
+
                                     </div>
 
                                 </div>
@@ -185,7 +181,7 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                       
+
                                         <li>
                                             <a href="#">Travel Info <i class="la la-angle-down"></i></a>
                                             <div class="dropdown-menu-item mega-menu">
@@ -199,7 +195,7 @@
                                                         <li><a href="{{ route('privacyPolicy') }}">Privacy Policy</a>
                                                         </li>
                                                         <li><a href="{{ route('accessibility') }}">Accessibility Plan</a></li>
-                                                        
+
                                                 </ul>
                                         </li>
                                         <li class="col-lg-6 mega-menu-item">
@@ -213,14 +209,14 @@
                                                             <li><a href="{{ route('termsConditions') }}">Terms
                                                         and Conditions</a></li>
                                                         <li><a href="https://www.biman-airlines.com/termsConditions#Biman-International-Tariff-Manual">Tariff Manual</a></li>
-                                            
-                                                
+
+
                                                 </ul>
                                         </li>
                                     </ul>
                             </div>
                             </li>
-                            
+
                             <li>
                                 <a href="#">Contact <i class="la la-angle-down"></i></a>
                                 <ul class="dropdown-menu-item beta-menu">
@@ -241,8 +237,8 @@
                                                             <li><a href="{{ route('login') }}">Loyalty Login</a></li>
                                                             @endauth
                                                             <li><a href="{{ route('loyalty.register') }}">Become a Member</a></li>
-                                                            
-                                                    
+
+
                                                         </ul>
                                                     </li>
                                                     <li class="col-lg-6 mega-menu-item">
@@ -260,13 +256,13 @@
                                             <a href="#">Exam Result<i class="la la-angle-down"></i></a>
                                             <ul class="dropdown-menu-item beta-menu">
                                                 <li><a target="_blank" href="https://drive.google.com/file/d/1-xbR9GtCIBaxzQMJBk809mNPkUVfFDuu/view?usp=sharing">13-07-2024 Asst. Manager AOC/ACP, Corporate Safety/Quality Assurance/Flight Data Monitoring Written Result</a></li>
-                                                
+
                                             </ul>
                                         </li>
                                 </ul>
                             </nav>
                         </div><!-- end main-menu-content -->
-                    
+
                     </div><!-- end menu-wrapper -->
                 </div><!-- end col-lg-12 -->
             </div><!-- end row -->
@@ -279,7 +275,7 @@
 
 
 
-    
+
     @yield('content')
 
     <!-- ================================
@@ -437,7 +433,7 @@
     {{-- carousal --}}
     <script src="{{ asset('assets/js/main_v1.js') }}"></script>
     <script src="{{ asset('assets/js/jquery.scrollbox.js') }}"></script>
-    
+
     <script>
         $(window).on('load',function(){
                         if (window.location.href.match("source=mobile-app$") || (window.location.href.match("source=mobile-app"))) {
@@ -454,18 +450,18 @@
                     newUrl = url.replace(newParam, "");
                     newUrl += newParam;
                     window.location.href = newUrl;
-    
+
                     if (window.location.href.match("source=mobile-app$") || (window.location.href.match("source=mobile-app"))) {
                         $('.header-menu-wrapper').css("display", "none");
                         $('.footer-area').css("display", "none");
                         // $('.breadcrumb-area').css("display", "none");
                     }
                 }
-    
+
             }
         });
 
-       
+
     </script>
 
     <script>
@@ -578,7 +574,7 @@
 
     <!-- Your SDK code -->
     <!-- Messenger Chat Plugin E-->
-    
+
     @yield('page-specific-footer')
 
 </body>
