@@ -58,8 +58,13 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" referrerpolicy="no-referrer" />
 
+<<<<<<< HEAD
     <!--<link rel="stylesheet" href="{{ asset('assets/css/custom_v13.css') }}">-->
     <link rel="stylesheet" href="{{ asset('assets/css/custom-20240815.css') }}">
+=======
+    <link rel="stylesheet" href="{{ asset('assets/css/custom-20240815.css') }}">
+
+>>>>>>> d8196c1b01a514478db478fc06c4e2e5ca019e9d
     @yield('header-extension')
     
 </head>
