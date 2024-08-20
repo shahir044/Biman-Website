@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-  <g id="ic-alert-circle" transform="translate(-1468.635 -1510.318)">
-    <rect id="Rectangle_1870" data-name="Rectangle 1870" width="24" height="24" transform="translate(1468.635 1510.318)" opacity="0"/>
-    <path id="Path_2607" data-name="Path 2607" d="M1480.64,1532.82a10.5,10.5,0,1,1,10.5-10.5,10.5,10.5,0,0,1-10.5,10.5Zm0-20a9.5,9.5,0,1,0,9.5,9.5A9.5,9.5,0,0,0,1480.64,1512.82Z" stroke="#000" stroke-width="0.4"/>
-    <path id="Path_2608" data-name="Path 2608" d="M1480.64,1522.82a.5.5,0,0,1-.5-.5v-4a.5.5,0,0,1,1,0v4A.5.5,0,0,1,1480.64,1522.82Z"/>
-    <path id="Path_2609" data-name="Path 2609" d="M1480.65,1526.82a.5.5,0,0,1-.01-1h.01a.5.5,0,0,1,0,1Z"/>
-  </g>
-</svg>
