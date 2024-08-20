@@ -1,8 +1,10 @@
 @extends('header-footer')
 
 @section('header-extension')
-    <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" /> -->
+    <!--<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.0/css/select2.min.css" integrity="sha512-aD9ophpFQ61nFZP6hXYu4Q/b/USW7rpLCQLX6Bi0WJHXNO7Js/fUENpBQf/+P4NtpzNX0jSgR5zVvPOJp+W2Kg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
         .modal-popup .modal-header, .modal-popup .modal-body, .modal-popup .modal-footer {
             padding: 0.3rem !important;
@@ -17,69 +19,45 @@
             color: #666666;
         }
         .hero-background{
-            /* background-image: url("/assets/images/hero/hero-bg2.jpg"); */
-            background-image: url("/assets/images/hajj/hero-banner-japan.png");
+            background-image: url("/assets/images/hero/hero-japan.jpg");
+
         }
         .cta-bg {
-            background-image: url("/assets/images/hajj/hajj (7).svg");
+            background-image: url("/assets/images/cta/cta-1.png");
+            background-position: center center; /* Centers the image */
         }
+
     </style>
 @endsection
 
 @section('content')
-    <!-- ======================================
-            START HERO-WRAPPER (WIDGET) AREA
-        ======================================= -->
-        <!-- <section class="hero-wrapper hero-wrapper5">
-            <div class="hero-box pb-5 hero-background">
-                <svg class="hero-svg d-none d-sm-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
-                    <path d="M0 10 0 0 A 90 59, 0, 0, 0, 100 0 L 100 10 Z"></path>
-                </svg>
-                <svg class="hero-svg" viewBox="0 0 500 150" preserveAspectRatio="none">
-                    <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
-                </svg>
-            </div>
-        </section> -->
-        <!-- end hero-wrapper -->
+
         <!-- ================================
-                END HERO-WRAPPER (WIDGET) AREA
-            ================================= -->
+        START HERO-WRAPPER AREA
+    ================================= -->
+    <section class="hero-wrapper hero-wrapper5">
+        <div class="hero-box pb-0 hero-background">
+        <span class="line-bg line-bg1"></span>
+            <span class="line-bg line-bg2"></span>
+            <span class="line-bg line-bg3"></span>
+            <span class="line-bg line-bg4"></span>
+            <span class="line-bg line-bg5"></span>
+            <span class="line-bg line-bg6"></span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="hero-content padding-bottom-100px">
+                            <div class="section-heading">
+                                <h2 class="sec__title line-height-70">Your Journey, Our Priority<br> Soar with the Pride of Bangladesh</h2>
+                                <p class="sec__desc pt-3"></p>
+                            </div>
+                        </div><!-- end hero-content -->
+                    </div><!-- end col-lg-12 -->
+                </div><!-- end row -->
+            </div><!-- end container -->
 
-
-            <!-- ================================
-    START HERO-WRAPPER AREA
-================================= -->
-<section class="hero-wrapper hero-wrapper5">
-    <div class="hero-box pb-0 hero-background">
-    <span class="line-bg line-bg1"></span>
-        <span class="line-bg line-bg2"></span>
-        <span class="line-bg line-bg3"></span>
-        <span class="line-bg line-bg4"></span>
-        <span class="line-bg line-bg5"></span>
-        <span class="line-bg line-bg6"></span>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="hero-content padding-bottom-150px">
-                        <div class="section-heading">
-                            <h2 class="sec__title line-height-70">Your Journey, Our Priority<br> Soar with the Pride of Bangladesh</h2>
-                            <p class="sec__desc pt-3"></p>
-                        </div>
-                    </div><!-- end hero-content -->
-                </div><!-- end col-lg-12 -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-        <!-- <svg class="hero-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"><polygon points="100 0 50 10 0 0 0 10 100 10"></polygon></svg> -->
-    </div>
-</section><!-- end hero-wrapper -->
-<!-- ================================
-    END HERO-WRAPPER AREA
-================================= -->
-
-<!--<a href="https://www.youtube.com/watch?v=Vyt1akjqsGc" target="__blank" class="rtl-btn">How to book flight</a>-->
-
-    <section class="info-area info-bg section--padding padding-bottom-200px pt-3">
-        <div class="container">
+            <!--Widget Starts-->
+            <div class="container padding-bottom-100px">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-tab text-center" id="book-ticket">
@@ -289,8 +267,8 @@
                                                                         </div>
                                                                     </div>
                                                                     <!--MODIFIED-->
-                                                                    <hr style="margin-top: 0.3rem; margin-bottom: 0.3rem;">
-                                                                    <div class="input-box">
+                                                                    <!--<hr style="margin-top: 0.3rem; margin-bottom: 0.3rem;">-->
+                                                                    <!--<div class="input-box">
                                                                         <span class="label-text text-color-6">Choose Class:</span>
                                                                         <div
                                                                             class="form-group d-flex align-items-center">
@@ -319,7 +297,7 @@
                                                                                 <span>Business</span>
                                                                             </label>
                                                                         </div>
-                                                                    </div>
+                                                                    </div>-->
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -496,8 +474,8 @@
                                                                         </div>
                                                                     </div>
                                                                     <!--MODIFIED-->
-                                                                    <hr style="margin-top: 0.3rem; margin-bottom: 0.3rem;">
-                                                                    <div class="input-box">
+                                                                    <!--<hr style="margin-top: 0.3rem; margin-bottom: 0.3rem;">-->
+                                                                    <!--<div class="input-box">
                                                                         <span class="label-text text-color-6">Choose Class:</span>
                                                                         <div
                                                                             class="form-group d-flex align-items-center">
@@ -526,7 +504,7 @@
                                                                                 <span>Business</span>
                                                                             </label>
                                                                         </div>
-                                                                    </div>
+                                                                    </div>-->
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -768,8 +746,8 @@
                                                                                     class="la la-plus"></i></div>
                                                                         </div>
                                                                     </div>
-                                                                    <hr style="margin-top: 0.3rem; margin-bottom: 0.3rem;">
-                                                                    <div class="input-box">
+                                                                    <!--<hr style="margin-top: 0.3rem; margin-bottom: 0.3rem;">-->
+                                                                    <!--<div class="input-box">
                                                                         <span class="label-text text-color-6">Choose Class:</span>
                                                                         <div
                                                                             class="form-group d-flex align-items-center">
@@ -798,7 +776,7 @@
                                                                                 <span>Business</span>
                                                                             </label>
                                                                         </div>
-                                                                    </div>
+                                                                    </div>-->
                                                                 </div>
                                                             </div>
                                                         </div><!-- end dropdown -->
@@ -1244,11 +1222,22 @@
                 </div><!-- end col-lg-12 -->
             </div><!-- end row -->
         </div><!-- end container -->
+            <!--Widget Ends-->
+            <!-- <svg class="hero-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"><polygon points="100 0 50 10 0 0 0 10 100 10"></polygon></svg> -->
+        </div>
+    </section><!-- end hero-wrapper -->
+    <!-- ================================
+        END HERO-WRAPPER AREA
+    ================================= -->
+
+<!--<a href="https://www.youtube.com/watch?v=Vyt1akjqsGc" target="__blank" class="rtl-btn">How to book flight</a>-->
+
+    <section class="info-area info-bg section--padding padding-bottom-200px pt-3">
 
         <!-- ================================
             STAR FUNFACT AREA
         ================================= -->
-        <div class="container padding-top-150px">
+        <div class="container padding-top-100px">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-heading text-center">
@@ -1314,7 +1303,25 @@
         END WIDGET AREA
     ================================= -->
 
-<!-- ================================
+    <div class="job-area section--padding" data-aos="zoom-in">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div>
+                        <div class="discount-img">
+                            <img src="{{asset('assets/images/offers/birdseye.png')}}" alt="discount img">
+                        </div><!-- end discount-img -->
+                    </div>
+                </div><!-- end col-lg-12 -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section-block"></div>
+
+
+    <!-- ================================
     START DESTINATION AREA
 ================================= -->
 <section class="destination-area dest-bg position-relative padding-top-100px padding-bottom-140px">
@@ -1401,20 +1408,20 @@
     END DESTINATION AREA
 ================================= -->
 
+
 <!-- ================================
     START CTA AREA
 ================================= -->
 <section class="cta-area cta-bg bg-fixed section-padding">
-    <div class="container">
+    <div class="container padding-top-80px padding-bottom-80px">
         <div class="row">
             <div class="col-lg-12">
-                <div class="section-heading  text-center">
-                    <h2 class="sec__title text-white font-size-50 line-height-60">A Sacred Journey <br> Deserves the Best Experience<br>- Fly with Us</h2>
-                    <p class="sec__desc text-white pt-3">For Your Memorable Hajj & Umrah Experience</p>
+                <div class="section-heading">
+                    <h2 class="sec__title text-white font-size-50 line-height-60">Your Journey, Our Priority</h2>
+                    <h2 class="sec__title text-white font-size-40 line-height-60 pt-2">Cherishing Every Moment, Above the Clouds</h2>
+                    <p class="sec__desc text-white pt-3">- Creating Memorable Journeys Together</p>
                 </div><!-- end section-heading -->
-                <div class="btn-box padding-top-35px text-center">
-                    <a href="{{route('hajj-info')}}" class="btn btn-lg btn-success border-0 font-weight-bold">Learn more <i class="la la-arrow-right ml-1"></i></a>
-                </div>
+
             </div><!-- end col-lg-12 -->
         </div><!-- end row -->
     </div><!-- end container -->
@@ -1422,6 +1429,7 @@
 <!-- ================================
     END CTA AREA
 ================================= -->
+
 
     <!-- ================================
             START DESTINATION (GALLERY) AREA
@@ -1480,47 +1488,77 @@
             END DESTINATION (GALLERY) AREA
         ================================= -->
 
-<!-- ================================
-    START MOBILE AREA
+
+
+    <!-- ================================
+        START MOBILE AREA
+    ================================= -->
+    <section class="mobile-app padding-top-100px padding-bottom-50px section-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="mobile-app-content">
+                        <div class="section-heading">
+                            <h2 class="sec__title line-height-55">Biman Android and IOS App is Available!</h2>
+                        </div><!-- end section-heading -->
+                        <ul class="info-list padding-top-30px">
+                            <li class="d-flex align-items-center mb-3"><span class="la la-check icon-element flex-shrink-0 ml-0"></span> Access and change your itinerary on-the-go</li>
+                            <li class="d-flex align-items-center mb-3"><span class="la la-check icon-element flex-shrink-0 ml-0"></span> Free check-in on your flights</li>
+                            <li class="d-flex align-items-center mb-3"><span class="la la-check icon-element flex-shrink-0 ml-0"></span> Get real-time trip updates</li>
+                        </ul>
+                        <div class="btn-box padding-top-30px d-flex">
+                            <a href="https://apps.apple.com/us/app/biman/id6444130555" target="_blank" class="d-inline-block mr-3">
+                                <img width="80%" src="{{asset('assets/images/app-store.png')}}" alt="app=store">
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.BimanAirlines.Biman" target="_blank" class="d-inline-block">
+                                <img width="80%" src="{{asset('assets/images/google-play.png')}}" alt="play-store">
+                            </a>
+                        </div><!-- end btn-box -->
+                    </div>
+                </div><!-- end col-lg-6 -->
+                <div class="col-lg-6">
+                    <div class="mobile-img">
+                        <img src="{{asset('assets/images/mobile-app_600x467.png')}}" alt="mobile-img">
+                    </div>
+                </div><!-- end col-lg-5 -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section><!-- end mobile-app -->
+    <!-- ================================
+        END MOBILE AREA
+    ================================= -->
+
+
+
+    <!-- ================================
+    START CTA AREA
 ================================= -->
-<section class="mobile-app padding-top-100px padding-bottom-50px section-bg">
+<section class="cta-area subscriber-area section-bg-2 padding-top-60px padding-bottom-80px" data-aos="zoom-in">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="mobile-app-content">
-                    <div class="section-heading">
-                        <h2 class="sec__title line-height-55">Biman Android and IOS App is Available!</h2>
-                    </div><!-- end section-heading -->
-                    <ul class="info-list padding-top-30px">
-                        <li class="d-flex align-items-center mb-3"><span class="la la-check icon-element flex-shrink-0 ml-0"></span> Access and change your itinerary on-the-go</li>
-                        <li class="d-flex align-items-center mb-3"><span class="la la-check icon-element flex-shrink-0 ml-0"></span> Free check-in on your flights</li>
-                        <li class="d-flex align-items-center mb-3"><span class="la la-check icon-element flex-shrink-0 ml-0"></span> Get real-time trip updates</li>
-                    </ul>
-                    <div class="btn-box padding-top-30px">
-                        <a href="#" class="d-inline-block mr-3">
-                            <img src="images/app-store.png" alt="">
-                        </a>
-                        <a href="#" class="d-inline-block">
-                            <img src="images/google-play.png" alt="">
-                        </a>
-                    </div><!-- end btn-box -->
-                </div>
-            </div><!-- end col-lg-6 -->
-            <div class="col-lg-6">
-                <div class="mobile-img">
-                    <img src="{{asset('assets/images/mobile-app_600x467.png')}}" alt="mobile-img">
-                </div>
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="section-heading">
+
+                    <h2 class="sec__title font-size-30 text-white">Join Biman Loyalty Club</h2>
+                    <p class="sec__desc text-white-50 pb-1 my-3 d-none d-sm-block">Enjoy the rewards of membership, earn miles, and get access to special offers.</p>
+                </div><!-- end section-heading -->
+            </div><!-- end col-lg-7 -->
+            <div class="col-lg-5">
+                <div class="subscriber-box">
+                    <div class="contact-form-action text-center">
+                        <a class="btn btn-success font-weight-bold" href="{{ route('loyalty.register') }}"><i class="fa fa-user-plus font-size-18 mr-2"></i> Become a Loyalty Member</a>
+                    </div>
+                </div><!-- end section-heading -->
             </div><!-- end col-lg-5 -->
         </div><!-- end row -->
     </div><!-- end container -->
-</section><!-- end mobile-app -->
+</section><!-- end cta-area -->
 <!-- ================================
-    END MOBILE AREA
+    END CTA AREA
 ================================= -->
 
-
  <!--end modal-Pop up for advertisement -->
-<div class="modal-popup">
+<!--<div class="modal-popup">
      <div class="modal fade bd-example-modal-lg" id="addContact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
      aria-hidden="true">
      <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -1531,24 +1569,23 @@
                     <span aria-hidden="true" style="font-size: 2rem; color: black;">&times;</span>
                   </button>
                   <a href="">
-                      <img  style="display:block; width: 100%; height:100%" src="{{ asset('assets/images/offers/SMILEBIMAN.png') }}">
+                      <img  style="display:block; width: 100%; height:100%" src="{{ asset('assets/images/offers/dr.yunus.png') }}" alt="dryunus.png">
                   </a>
-
              </div>
-
          </div>
      </div>
     </div>
-</div>
+</div>-->
  <!--end modal-Pop up for advertisement-->
 @endsection
 
 
 @section('page-specific-footer')
-    <!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.0/js/select2.min.js"></script>
 
-    <script src="{{ asset('assets/js/customJs/searchWidgetDestination_v12.js') }}"></script>
+
+    <script src="{{ asset('assets/js/customJs/searchWidgetDestination_v15.js') }}"></script>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
@@ -1573,10 +1610,24 @@
         });
     </script>
 
+    <!--For Scroll Animation-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script type="text/javascript">
     	$("img").lazyload({
     	    effect : "fadeIn"
     	});
+
+    	// Modal Offer
+        /*$(window).on('load',function(){
+            if (!sessionStorage.getItem('shown-modal')){
+                $('#addContact').modal('show');
+                sessionStorage.setItem('shown-modal', 'true');
+            }
+        });*/
     </script>
 
     <script type="text/javascript">
@@ -1590,12 +1641,14 @@
             $("#departureFlightSchedule").val(null).trigger("change");
             $("#arrivalFlightSchedule").val(null).trigger("change");
 		});
-		$(window).on('load',function(){
+
+        $(window).on('load',function(){
             if (!sessionStorage.getItem('shown-modal')){
                 $('#addContact').modal('show');
                 sessionStorage.setItem('shown-modal', 'true');
             }
         });
+
         $(window).on('resize load', function () {
             if ($(window).width() <= 768) {
                 $("#oneway_search").removeClass("d-flex");
@@ -1741,7 +1794,7 @@
                 var country_code = this.responseText.replace(/(\r\n|\n|\r)/gm,"").split('loc=');
                 country_code = country_code[1].split('tls=');
                 country_code = country_code[0];
-                let arr = ['US', 'GB', 'TH', 'EU','BD','SA','AE','OM','MY','QA','SG','CN','HK','KW','CA','JP','LK','MV','ID','AU'];
+                let arr = ['US', 'GB', 'TH','BD','SA','AE','OM','MY','QA','SG','CN','HK','KW','CA','JP','LK','MV','ID','AU','IT'];
                 let pos = country_code;
                 var ans  = (arr.indexOf(pos) > -1);
                 if(ans){

@@ -36,7 +36,7 @@
     <meta property="og:url" content="https://www.biman-airlines.com/" />
     <meta property="og:title" content=" Your Home In The Sky" />
     <meta property="og:description" content="The National Flag Carrier of Bangladesh." />
-
+    
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('assets/images/logo/bimanLogo-Copy.svg') }}">
 
@@ -58,10 +58,10 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="{{ asset('assets/css/custom_v13.css') }}">
-
+    <!--<link rel="stylesheet" href="{{ asset('assets/css/custom_v13.css') }}">-->
+    <link rel="stylesheet" href="{{ asset('assets/css/custom-20240815.css') }}">
     @yield('header-extension')
-
+    
 </head>
 
 <body>
@@ -98,10 +98,11 @@
                     <div class="col-lg-5">
                         <div class="header-top-content">
                             <div class="header-right d-flex align-items-center justify-content-end">
-
+                                
                                 <div class="header-right-action">
                                     <ul class="list-items">
-                                        <li style="padding-right: 4px;margin-bottom:0px;"><a href="tel:+8801990997997"><i class="fa fa-phone mr-1"></i>+8801990997997</a></li>
+                                        <li style="padding-right: 14px;margin-bottom:0px;"><a href="{{ route('accessibility') }}"><i class="fa fa-wheelchair-alt mr-1" aria-hidden="true"></i> Accessibility</a></li>
+                                        <li style="padding-right: 4px;margin-bottom:0px;"><a href="tel:13636"><i class="fa fa-phone ml-1 mr-1"></i>13636</a></li>
                                         <li style="padding-right: .5rem;margin-bottom:0px;"><a href="mailto:ibebiman@biman.gov.bd"><i class="fa fa-envelope mr-1"></i>ibebiman@biman.gov.bd</a></li>
                                     </ul>
                                 </div>
@@ -109,7 +110,7 @@
                                     <div class="select-contain select--contain w-auto" style="align-items: center;justify-content: center;
                                     text-align: center;display: flex;">
                                         <span id="flag" class="flag-icon flag-icon-bd mr-1" style="height: 14px;"></span>
-
+                                    
                                     </div>
 
                                 </div>
@@ -125,7 +126,7 @@
                                          </form>
                                      @else
                                          <!--<a href="{{route('loyalty.register')}}" class="theme-btn theme-btn-small theme-btn-transparent mr-1">Sign Up</a>-->
-                                         <a class="text-color-1 btn btn-outline-success font-size-14" href="{{ route('login') }}"><i class="fa fa-sign-in-alt"></i> Login</a>
+                                         <!--<a class="text-color-1 btn btn-outline-success font-size-14" href="{{ route('login') }}"><i class="fa fa-sign-in-alt"></i> Login</a>-->
                                      @endauth
                                 </div>
                             </div>
@@ -179,7 +180,7 @@
                                                 </ul>
                                             </div>
                                         </li>
-
+                                       
                                         <li>
                                             <a href="#">Travel Info <i class="la la-angle-down"></i></a>
                                             <div class="dropdown-menu-item mega-menu">
@@ -192,8 +193,8 @@
                                                         <li><a href="{{ route('refund-request', ['#refund_status']) }}">Check Refund Status</a></li>
                                                         <li><a href="{{ route('privacyPolicy') }}">Privacy Policy</a>
                                                         </li>
-                                                        <li><a href="{{ route('accessibility-plan') }}">Disability Assistance</a></li>
-
+                                                        <li><a href="{{ route('accessibility') }}">Accessibility Plan</a></li>
+                                                        
                                                 </ul>
                                         </li>
                                         <li class="col-lg-6 mega-menu-item">
@@ -207,14 +208,14 @@
                                                             <li><a href="{{ route('termsConditions') }}">Terms
                                                         and Conditions</a></li>
                                                         <li><a href="https://www.biman-airlines.com/termsConditions#Biman-International-Tariff-Manual">Tariff Manual</a></li>
-
-
+                                            
+                                                
                                                 </ul>
                                         </li>
                                     </ul>
                             </div>
                             </li>
-
+                            
                             <li>
                                 <a href="#">Contact <i class="la la-angle-down"></i></a>
                                 <ul class="dropdown-menu-item beta-menu">
@@ -223,42 +224,44 @@
                                     <li><a href="{{ route('contact', ['#customer-feedback']) }}">Feedback</a></li>
                                 </ul>
                             </li>
-                            <li>
-                                <a href="#">Hajj 2024 <i class="la la-angle-down"></i></a>
-                                <ul class="dropdown-menu-item beta-menu">
-                                    <li><a href="{{ route('hajj-info') }}">Hajj Schedule</a></li>
-                                </ul>
-                            </li>
                              <li>
                                             <a href="#">Loyalty Club <i class="la la-angle-down"></i></a>
                                             <div class="dropdown-menu-item mega-menu">
                                                 <ul class="row no-gutters">
                                                     <li class="col-lg-6 mega-menu-item">
                                                         <ul>
-                                                            <li><a href="{{ route('loyalty.home') }}">About Us</a></li>
+                                                            @auth
+                                                            <li><a href="{{ route('loyalty.member.test') }}">My Account</a></li>
+                                                            @else
+                                                            <li><a href="{{ route('login') }}">Loyalty Login</a></li>
+                                                            @endauth
                                                             <li><a href="{{ route('loyalty.register') }}">Become a Member</a></li>
-                                                            <li><a href="{{ route('loyalty.tc') }}">Terms & Conditions</a></li>
-                                                           {{-- <li><a href="{{ route('loyalty.earn') }}">Earning Miles</a></li>--}}
+                                                            
+                                                    
                                                         </ul>
                                                     </li>
                                                     <li class="col-lg-6 mega-menu-item">
                                                         <ul>
-
+                                                            <li><a href="{{ route('loyalty.tc') }}">Terms & Conditions</a></li>
                                                             <li><a href="{{ route('loyalty.faq') }}">Loyalty FAQ's</a></li>
-                                                            @auth
-                                                            <li><a href="{{ route('loyalty.member.test') }}">My Account</a></li>
-                                                            @endauth
-
+                                                            <li><a href="{{ route('loyalty.home') }}">About Loyalty Club</a></li>
                                                             <!--<li><a href="{{ route('login') }}">Login</a></li>-->
                                                         </ul>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
+                                        <li>
+                                            <a href="#">Exam Result<i class="la la-angle-down"></i></a>
+                                            <ul class="dropdown-menu-item beta-menu">
+                                                <li><a target="_blank" href="https://drive.google.com/file/d/1-xbR9GtCIBaxzQMJBk809mNPkUVfFDuu/view?usp=sharing">13-07-2024 Asst. Manager AOC/ACP, Corporate Safety/Quality Assurance/Flight Data Monitoring Written Result</a></li>
+                                                
+                                            </ul>
+                                        </li>
                                 </ul>
                             </nav>
                         </div><!-- end main-menu-content -->
-
+                    
                     </div><!-- end menu-wrapper -->
                 </div><!-- end col-lg-12 -->
             </div><!-- end row -->
@@ -270,13 +273,8 @@
 ================================= -->
 
 
-    <!-- Messenger Chat plugin Code -->
-    <div id="fb-root"></div>
 
-    <!-- Your Chat plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
+    
     @yield('content')
 
     <!-- ================================
@@ -309,10 +307,10 @@
                     <div class="footer-item">
                         <h4 class="title custom-footer-title curve-shape pb-3 margin-bottom-20px">Useful Links</h4>
                         <ul class="list-items list--items">
-                            {{-- <li><a href="about.html">CEO's Message</a></li> --}}
-                            <li><a href="{{route('news-list')}}">News & Announcement</a></li>
+                            <li><a href="{{ route('accessibility') }}">Accessibility Plan</a></li>
+                            <li><a href="{{route('news-list')}}">Latest News</a></li>
                             <li><a href="{{ route('contact', ['#customer-feedback']) }}">Feedback</a></li>
-                            <li><a target="_blank" href="http://biman.gov.bd/site/view/jobs/-">Careers</a></li>
+                            <li><a target="_blank" href="https://biman-airlines.portal.gov.bd/site/view/jobs/-">Careers</a></li>
                             <li><a href="{{ route('contact', ['#domestic']) }}">Contacts</a></li>
                             <li><a target="_blank" href="http://biman.gov.bd/site/view/tenders/-">Tender</a></li>
                         </ul>
@@ -324,9 +322,9 @@
                     <div class="footer-item">
                         <h4 class="title custom-footer-title curve-shape pb-3 margin-bottom-20px">Other Links</h4>
                         <ul class="list-items list--items">
-                            <li><a target="_blank" href="http://biman.gov.bd/">Biman Govt. Portal</a></li>
-                            <li><a target="_blank" href="http://bfcc-bd.com/">Biman Flight Catering Centre - BFCC</a></li>
-                            <li><a target="_blank" href="http://caab.portal.gov.bd/">Civil Aviation Authority, Bangladesh - CAAB</a></li>
+                            <li><a target="_blank" href="https://biman-airlines.portal.gov.bd/">Biman Govt. Portal</a></li>
+                            <li><a target="_blank" href="http://bfcc-bd.com/">Biman Flight Catering Centre</a></li>
+                            <li><a target="_blank" href="http://caab.portal.gov.bd/">Civil Aviation Authority, Bangladesh</a></li>
                             <li><a target="_blank" href="http://www.mohfw.gov.bd/">Ministry of Health and Family Welfare</a></li>
                             <li><a target="_blank" href="http://www.parjatan.gov.bd/">Parjatan Corporation</a></li>
                         </ul>
@@ -387,7 +385,7 @@
                     </div><!-- end copy-right -->
                 </div><!-- end col-lg-7 -->
                 <div class="col-lg-6">
-                    <div class="copy-right-content d-flex align-items-center justify-content-end padding-top-30px">
+                    <div class="copy-right-content d-flex flex-wrap align-items-center justify-content-end padding-top-30px">
                         <h3 class="title custom-footer-title font-size-15 pr-2">We Accept</h3>
                         <img class="payment-img" style="height: 28px ;background: white" src="{{asset('assets/images/payment/p-nagad.png')}}" alt="">
                         <img class="payment-img" style="height: 29px" src="{{asset('assets/images/payment/p-bkash.png')}}" alt="">
@@ -395,7 +393,8 @@
                         <img class="payment-img" style="height: 31px" src="{{asset('assets/images/payment/p-amex.png')}}" alt="">
                         <img class="payment-img" style="height: 31px" {{-- style="height: 17px!important;"--}} src="{{asset('assets/images/payment/p-visa.png')}}" alt="">
                         <img class="payment-img" style="height: 31px" src="{{asset('assets/images/payment/p-master.png')}}" alt="">
-                        <img class="payment-img" style="height: 31px" src="{{asset('assets/images/logo/jcb.png')}}" alt="">
+                        <img class="payment-img" style="height: 31px" src="{{asset('assets/images/logo/jcb.png')}}" alt="JCB Logo">
+                        <img class="payment-img" style="width: 80px" src="{{asset('assets/images/logo/sslcom.png')}}" alt="SSL Commerz Logo">
 
                     </div><!-- end copy-right-content -->
                 </div><!-- end col-lg-5 -->
@@ -433,7 +432,7 @@
     {{-- carousal --}}
     <script src="{{ asset('assets/js/main_v1.js') }}"></script>
     <script src="{{ asset('assets/js/jquery.scrollbox.js') }}"></script>
-
+    
     <script>
         $(window).on('load',function(){
                         if (window.location.href.match("source=mobile-app$") || (window.location.href.match("source=mobile-app"))) {
@@ -450,18 +449,18 @@
                     newUrl = url.replace(newParam, "");
                     newUrl += newParam;
                     window.location.href = newUrl;
-
+    
                     if (window.location.href.match("source=mobile-app$") || (window.location.href.match("source=mobile-app"))) {
                         $('.header-menu-wrapper').css("display", "none");
                         $('.footer-area').css("display", "none");
                         // $('.breadcrumb-area').css("display", "none");
                     }
                 }
-
+    
             }
         });
 
-
+       
     </script>
 
     <script>
@@ -570,6 +569,11 @@
         xhttp.send();
     </script>
 
+    <!-- Messenger Chat Plugin S-->
+
+    <!-- Your SDK code -->
+    <!-- Messenger Chat Plugin E-->
+    
     @yield('page-specific-footer')
 
 </body>

@@ -547,7 +547,6 @@ body{
     border-radius: 8px;
     /* border-color: black; */
     margin-bottom: 0.3rem;
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
 }
 
 .hero-box {
@@ -758,7 +757,6 @@ section.testimonial-area.section-padding {
 .section-tab .nav-tabs .nav-link.d-flex.align-items-center.active {
     color: #2aaa8a;
     background-color: #fff;
-    border: .5px solid;
 }
 /* widget background ends */
 
@@ -1387,7 +1385,7 @@ html {
   background-image: url("../images/loyalty/image-top/lounge.jpg"); }
 
 .bread-bg-special-assistance {
-    background-image: url("../images/misc/special-assistance.png");
+    background-image: url("../images/misc/special-assistance.png"); 
 }
 
   .bg-silver {
@@ -1404,84 +1402,3 @@ html {
     object-fit: cover;
     object-position: center 20%;
 }
-
-.section-tab-3 .nav-tabs .nav-item {
-    margin-right: 3px;
-}
-
-.search-fields-container-shape {
-    margin-top: 0px;
-}
-
-.info-bg::before {
-    background-image: url(../images/hero/back-img.png);
-}
-
-.destination-card .card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.counter-box {
-    background-color: #006a4e;
-}
-
-.card-item {
-    border-radius: 25px;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-}
-
-.mobile-app .mobile-img {
-    bottom: 0px;
-}
-
-@media (max-width: 425px) {
-    .section-heading .sec__title {
-        font-size: 25px;
-    }
-}
-
-.info-bg::before {
-    opacity: 0.5;
-}
-
-.dest-bg::before{
-    position: absolute;
-    opacity: 0.2;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background-image: url("/assets/images/destination-img_600x845/destination-bg.png");
-}
-
-/* hajj routes S*/
-.routes {
-    background-color: #fff;
-    -webkit-box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15);
-    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15);
-}
-
-.route-item {
-    padding: 13px 14px;
-    border-bottom: 1px solid rgba(128, 137, 150, 0.1);
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-    background-color: #fff;
-    position: relative;
-}
-
-.route-item:hover {
-    -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.15);
-    z-index: 1;
-}
-/* hajj routes E*/
