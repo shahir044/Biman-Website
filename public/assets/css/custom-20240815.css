@@ -1387,7 +1387,7 @@ html {
   background-image: url("../images/loyalty/image-top/lounge.jpg"); }
 
 .bread-bg-special-assistance {
-    background-image: url("../images/misc/special-assistance.png");
+    background-image: url("../images/misc/special-assistance.png"); 
 }
 
   .bg-silver {
@@ -1414,7 +1414,7 @@ html {
 }
 
 .info-bg::before {
-    background-image: url(../images/hero/back-img_1920x1024.png);
+    background-image: url(../images/hajj/arafah.png);
 }
 
 .destination-card .card-title {

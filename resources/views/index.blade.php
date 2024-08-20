@@ -34,10 +34,10 @@
             <div class="hero-box pb-5 hero-background">
                 <svg class="hero-svg d-none d-sm-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
                     <path d="M0 10 0 0 A 90 59, 0, 0, 0, 100 0 L 100 10 Z"></path>
-                </svg> 
+                </svg>
                 <svg class="hero-svg" viewBox="0 0 500 150" preserveAspectRatio="none">
                     <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
-                </svg> 
+                </svg>
             </div>
         </section> -->
         <!-- end hero-wrapper -->
@@ -68,7 +68,6 @@
                     </div><!-- end hero-content -->
                 </div><!-- end col-lg-12 -->
             </div><!-- end row -->
-            
         </div><!-- end container -->
         <!-- <svg class="hero-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"><polygon points="100 0 50 10 0 0 0 10 100 10"></polygon></svg> -->
     </div>
@@ -79,8 +78,8 @@
 
 <!--<a href="https://www.youtube.com/watch?v=Vyt1akjqsGc" target="__blank" class="rtl-btn">How to book flight</a>-->
 
-<section class="info-area info-bg section--padding padding-bottom-200px pt-3">
-    <div class="container">
+    <section class="info-area info-bg section--padding padding-bottom-200px pt-3">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-tab text-center" id="book-ticket">
@@ -1249,15 +1248,12 @@
         <!-- ================================
             STAR FUNFACT AREA
         ================================= -->
-        <!-- ================================
-            STAR FUNFACT AREA
-        ================================= -->
         <div class="container padding-top-150px">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-heading text-center">
-                        <h2 class="sec__title">Biman's Hajj Journey 2024</h2>
-                        <p class="sec__desc pt-3">From Takeoff to Landing: A Closer Look at Hajj Operations</p>
+                        <h2 class="sec__title">Biman at a glance</h2>
+                        <p class="sec__desc pt-3">From Takeoff to Landing: A closer look to our operations</p>
                     </div><!-- end section-heading -->
                 </div><!-- end col-lg-12 -->
             </div><!-- end row -->
@@ -1266,23 +1262,34 @@
                     <div class="col-lg-3 responsive-column">
                         <div class="counter-item d-flex">
                             <div class="counter-icon flex-shrink-0">
-                                <i class="la la-user"></i>
+                                <i class="la la-plane"></i>
                             </div>
                             <div class="counter-content">
-                                <span class="counter" data-from="0" data-to="43899"  data-refresh-interval="10">0</span>
-                                <span class="count-symbol">+</span>
-                                <h3 class="counter__title">Passengers</h3>
+                                <span class="counter" data-from="0" data-to="21"  data-refresh-interval="3">0</span>
+                                <h3 class="counter__title">Fleet Family</h3>
                             </div><!-- end counter-content -->
                         </div><!-- end counter-item -->
                     </div><!-- end col-lg-3 -->
                     <div class="col-lg-3 responsive-column">
                         <div class="counter-item d-flex">
                             <div class="counter-icon flex-shrink-0">
-                                <i class="la la-plane"></i>
+                                <i class="la la-globe"></i>
                             </div>
                             <div class="counter-content">
-                                <span class="counter" data-from="0" data-to="241"  data-refresh-interval="3">0</span>
-                                <h3 class="counter__title">Pre & Post Hajj Flights</h3>
+                                <span class="counter" data-from="0" data-to="23"  data-refresh-interval="10">0</span>
+                                {{--<span class="count-symbol">+</span>--}}
+                                <h3 class="counter__title">Intl Destination</h3>
+                            </div><!-- end counter-content -->
+                        </div><!-- end counter-item -->
+                    </div><!-- end col-lg-3 -->
+                    <div class="col-lg-3 responsive-column">
+                        <div class="counter-item d-flex">
+                            <div class="counter-icon flex-shrink-0">
+                                <i class="la la-map-marked"></i>
+                            </div>
+                            <div class="counter-content">
+                                <span class="counter" data-from="0" data-to="7"  data-refresh-interval="3">0</span>
+                                <h3 class="counter__title">Domestic Destination</h3>
                             </div><!-- end counter-content -->
                         </div><!-- end counter-item -->
                     </div><!-- end col-lg-3 -->
@@ -1292,20 +1299,9 @@
                                 <i class="la la-clock"></i>
                             </div>
                             <div class="counter-content">
-                                <span class="counter" data-from="0" data-to="90"  data-refresh-interval="3">0</span>
+                                <span class="counter" data-from="0" data-to="80"  data-refresh-interval="3">0</span>
                                 <span class="count-symbol">% above</span>
                                 <p class="counter__title">On Time Performace</p>
-                            </div><!-- end counter-content -->
-                        </div><!-- end counter-item -->
-                    </div><!-- end col-lg-3 -->
-                    <div class="col-lg-3 responsive-column">
-                        <div class="counter-item d-flex">
-                            <div class="counter-icon flex-shrink-0">
-                                <i class="la la-shopping-bag"></i>
-                            </div>
-                            <div class="counter-content">
-                                <span class="counter" data-from="0" data-to="46"  data-refresh-interval="2">0</span>
-                                <p class="counter__title">Kg Baggage Allowance</p>
                             </div><!-- end counter-content -->
                         </div><!-- end counter-item -->
                     </div><!-- end col-lg-3 -->
@@ -1315,7 +1311,7 @@
         <!--END FUNFACT AREA -->
     </section>
     <!-- ================================
-        END FUNFACT AREA
+        END WIDGET AREA
     ================================= -->
 
 <!-- ================================
@@ -1342,7 +1338,7 @@
                             </div>
                             <div class="card-body">
                                 <h3 class="card-title"><a href="tour-details.html">Makkah, Saudi Arabia</a></h3>
-                                
+
                             </div>
                         </div><!-- end card-item -->
                         <div class="card-item destination-card">
@@ -1352,7 +1348,7 @@
                             </div>
                             <div class="card-body">
                                 <h3 class="card-title"><a href="tour-details.html">Rome, Italy</a></h3>
-                                
+
                             </div>
                         </div><!-- end card-item -->
                         <div class="card-item destination-card">
@@ -1362,7 +1358,7 @@
                             </div>
                             <div class="card-body">
                                 <h3 class="card-title"><a href="tour-details.html">Changi, Singapore</a></h3>
-                                
+
                             </div>
                         </div><!-- end card-item -->
                         <div class="card-item destination-card">
@@ -1381,7 +1377,7 @@
                             </div>
                             <div class="card-body">
                                 <h3 class="card-title"><a href="tour-details.html">Kathmandu, Nepal</a></h3>
-                                
+
                             </div>
                         </div><!-- end card-item -->
                         <div class="card-item destination-card">
@@ -1391,7 +1387,7 @@
                             </div>
                             <div class="card-body">
                                 <h3 class="card-title"><a href="tour-details.html">Bangkok, Thailand</a></h3>
-                                
+
                             </div>
                         </div><!-- end card-item -->
                     </div><!-- end car-carousel -->
@@ -1437,7 +1433,7 @@
                     <div class="section-heading">
                         <h3 class="font-weight-bold">Where We Fly</span>
                         <h2 class="sec__title cd-headline rotate-1 display-3">
-                            DHAKA TO 
+                            DHAKA TO
                             <span class="cd-words-wrapper text-color-10 font-weight-bolder">
                               <b class="is-visible">ABU DHABI</b>
                               <b>BANGKOK</b>
@@ -1463,7 +1459,7 @@
                           </h2>
                     </div><!-- end section-heading -->
                 </div><!-- end col-lg-12 -->
-                
+
                 <div class="row padding-top-50px">
                     <div class="col-lg-12">
                         <a href="{{ route('destinations-domestic') }}">
@@ -1475,7 +1471,7 @@
                             </div>
                         </a>
                     </div>
-                    
+
                 </div><!-- end col-lg-4 -->
             </div><!-- end row -->
         </div><!-- end container -->
@@ -1520,7 +1516,7 @@
 </section><!-- end mobile-app -->
 <!-- ================================
     END MOBILE AREA
-================================= -->    
+================================= -->
 
 
  <!--end modal-Pop up for advertisement -->
@@ -1529,17 +1525,17 @@
      aria-hidden="true">
      <div class="modal-dialog modal-dialog-centered modal-lg">
          <div class="modal-content" style="width:90%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
-             
+
              <div style="padding: 0rem !important;" class="modal-body">
                   <button style="position: absolute; z-index: 1; right: .9rem; color: blue; " type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true" style="font-size: 2rem; color: black;">&times;</span>
                   </button>
                   <a href="">
                       <img  style="display:block; width: 100%; height:100%" src="{{ asset('assets/images/offers/SMILEBIMAN.png') }}">
-                  </a> 
-                 
+                  </a>
+
              </div>
-           
+
          </div>
      </div>
     </div>
@@ -1564,11 +1560,11 @@
     {{-- slider --}}
 
     {{-- for swal --}}
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
-    
+
     <!-- Setup and start animation! -->
     <script>
         var typed = new Typed('#typeElement', {
@@ -1576,13 +1572,13 @@
         typeSpeed: 90,
         });
     </script>
-    
+
     <script type="text/javascript">
     	$("img").lazyload({
     	    effect : "fadeIn"
     	});
     </script>
-    
+
     <script type="text/javascript">
 		$(window).on('load', function() {
 		    $("#departure1").val(null).trigger("change");
@@ -1621,7 +1617,7 @@
             }
         });
 	</script>
-	
+
 
     <script>
         $("#depart2").select2({
@@ -1644,15 +1640,15 @@
             singleDatePicker: true,
             minDate: new Date(),
         });
-        
+
     </script>
     <script>
-        
+
         var nowDate = new Date();
         var tomorrowDate = new Date(new Date().getTime() + 48 * 60 * 60 * 1000);
         var today = new Date(nowDate.getFullYear(), nowDate.getMonth(), nowDate.getDate(), 0, 0, 0, 0);
         var maxLimitDate = new Date(nowDate.getFullYear() + 1, nowDate.getMonth(), nowDate.getDate(), 0, 0, 0, 0);
-        
+
         $('input[name="daterange_single"]').daterangepicker({
             "autoApply": true,
             "singleDatePicker": true,
@@ -1680,7 +1676,7 @@
         }, function(start, end) {
             $("#departingDateRound").val(start.format('DD-MM-YYYY'));
             $('#departingDateRound').parent().parent().removeClass('has-error');
-            
+
             var aMinDate = new Date(Date.parse(start));
 
             $('input[name="daterange_round_two"]').daterangepicker({
@@ -1714,8 +1710,8 @@
             $('#departingDateRoundTwo').parent().parent().removeClass('has-error');
         });
 
-        
-        
+
+
         $('input[name="daterange_single_status"]').daterangepicker({
             "autoApply": true,
             "singleDatePicker": true,
@@ -1728,15 +1724,15 @@
         },function (start, end) {
             $("#daterange-schedule").val(start.format('DD-MM-YYYY'));
             $('#daterange-schedule').parent().parent().removeClass('has-error');
-           
+
         });
         $('input[name="daterange_multi"]').daterangepicker({
-           
+
             singleDatePicker: true,
             minDate: new Date(),
         });
     </script>
-       
+
 
     <script type="text/javascript">
         var xhttp = new XMLHttpRequest();
@@ -1763,7 +1759,7 @@
         xhttp.open("GET", "https://www.cloudflare.com/cdn-cgi/trace", true);
         xhttp.send();
     </script>
-    
+
     {{--<script>
         $(document).ready(function() {
                         $("#manageTrip").click(function() {
@@ -1789,8 +1785,8 @@
             });
             $("#btnShowFlightsStatusNumber").click(function() {
                 var flight_no = document.forms["Form"]["flight_no"].value;
-                
-                
+
+
                 if ( flight_no == null || flight_no == "" ) {
                 }else{
                     $(this).html(
@@ -1816,39 +1812,39 @@
         $(document).ready(function() {
             $(function() {
                 var hash = window.location.hash;
-                
+
                 hash && $('ul.nav a[href="' + hash + '"]').tab('show');
 
                 $('.nav-tabs a').click(function(e) {
                     $(this).tab('show');
                     window.location.hash = this.hash;
-                    
+
                 });
             });
-            
+
             // to get the previously selected option
             $('select').each(function() {
                 var select = $(this);
-                
+
 
                 var selectedValue = select.find('option[selected]').val();
 
                 if (typeof selectedValue == 'undefined') {
                     selectedValue = select.find(':selected').val();
-                    
+
                     if (selectedValue) {
                         select.val('').trigger("change");
                         selectedValue = select.find(':selected').val();
-                        
+
                     }
                 }
                 if (selectedValue == ',Select Destination') {
                     select.val('').trigger("change");
                     selectedValue = select.find(':selected').val();
-                    
+
                 }
 
-                
+
 
                 if (selectedValue == 'Economy' || selectedValue == 'Business') {
                     select.val(selectedValue);
