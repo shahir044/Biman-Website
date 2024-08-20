@@ -17,8 +17,8 @@
             color: #666666;
         }
         .hero-background{
-            /* background-image: url("/assets/images/hero/hero-bg2.jpg"); */
-            background-image: url("/assets/images/hajj/hero-banner-japan.png");
+             background-image: url("/assets/images/hero/hero-bg4.jpg");
+            /*background-image: url("/assets/images/hero/hero-banner-japan.png");*/
         }
         .cta-bg {
             background-image: url("/assets/images/hajj/hajj (7).svg");
