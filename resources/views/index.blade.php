@@ -1303,14 +1303,34 @@
         END WIDGET AREA
     ================================= -->
 
-    <div class="job-area section--padding" data-aos="zoom-in">
+    <div class="job-area section--padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div>
                         <div class="discount-img">
-                            <img src="{{asset('assets/images/offers/birdseye.png')}}" alt="discount img">
+                            <img src="{{asset('assets/images/offers/birdseye-new.png')}}" alt="discount img">
                         </div><!-- end discount-img -->
+                    </div>
+                    <div class="discount-content">
+                        <div class="section-heading">
+                            <h2 class="sec__title mb-2 font-size-30">
+                                Exciting Offer: 10% Discount
+                            </h2>
+                            <p class="sec__desc font-weight-bold text-white">
+                                Manchester, Rome, Narita, Guangzhou, Bangkok, Singapore
+<br>
+
+                                KualaLumpur, Madina, Muscat, Doha, Sharjah, Abu Dhabi,
+
+<br>
+                                Dubai, Delhi, Chennai, Kolkata
+                            </p>
+                        </div>
+                        <!-- end section-heading -->
+                        <div class="btn-box pt-4">
+                            <span class="theme-btn btn-lg btn-primary font-weight-bold border-0 text-lg-center">Promo: BIRDSEYE<i class="la la-tag ms-1"></i></span>
+                        </div>
                     </div>
                 </div><!-- end col-lg-12 -->
             </div>
